@@ -22,8 +22,13 @@
       <%= yield %>
     </div>
     <%= render 'shared/signout_modal' %>
-    <% unless controller_name = "welcome" %>
+
+
+    <% unless controller_name = "welcome"%>
       <%= render "shared/footer" %>
     <% end %>
+    
   </body>
 </html>
+
+
