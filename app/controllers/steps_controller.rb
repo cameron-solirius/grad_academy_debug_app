@@ -44,7 +44,7 @@ class StepsController < ApplicationController
       session[:quiz_forms] ||= []
       session[:quiz_forms][@quiz_form.current_step - 1] = @quiz_form.attributes
 
-      next_step
+      next_step 
     else
       render :show, status: :unprocessable_content
     end
