@@ -7,6 +7,12 @@ class ApplicationController < ActionController::Base
   before_action :clear_quiz_session_data, unless: :on_quiz_page?
   before_action :set_locale
 
+  if controller_name == 'home'
+    @title_name = 'Quizlet'
+  else
+    @title_name = 'Quizlet -'
+  end
+
   # Sets the locale for the application based on user's preferred language or browser settings.
   def set_locale
     if current_user&.language.present?
