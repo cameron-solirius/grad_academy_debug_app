@@ -2,12 +2,12 @@
 <div class="d-flex align-items-center h-100">
   <div class="row col-12 justify-content-center mt-5 pt-5">
     <div class="col-md-5 col-12 border-end border-2 border-danger p-0 mobile-margin" id="mobile-border">
-      <h2 class="text-center text-light"><%= t('users.sign_up_headline') %></h2>
-      <h4 class="text-center text-light fw-normal mt-3"><%= t('users.sign_up_line_one') %></h4>
-      <%= image_tag '', skip_pipeline: true, alt: "Sign up welcome image" %>
+      <h2 class="text-center"><%= t('users.sign_up_headline') %></h2>
+      <h4 class="text-center fw-normal mt-3"><%= t('users.sign_up_line_one') %></h4>
+      <%= image_tag('sign-up-welcome.svg', alt: "Sign up welcome image") %>
     </div>
     <div class="col-md-4 col-12 ms-5">
-      <h2 class="text-center text-light"><%= t('users.create_account') %></h2>
+      <h2 class="text-center "><%= t('users.create_account') %></h2>
       <div class="mt-5">
         <%= form_with model: @user, url: sign_up_path, html: { class: "signup-form" } do |form| %>
           <%= render partial: "shared/form_errors", locals: { object: form.object } %>
@@ -24,9 +24,9 @@
           </div>
         <% end %>
         <div class="d-flex align-items-center justify-content-center mt-3">
-          <h5 class="text-center text-light fw-normal pe-1"><%= t('users.login_prompt') %></h5>
+          <h5 class="text-center  fw-normal pe-1"><%= t('users.login_prompt') %></h5>
           <%= link_to login_path do %>
-            <h5 class="text-center text-light fw-semibold text-danger"><%= t('forms.sign_in') %></h5>
+            <h5 class="text-center fw-semibold text-danger"><%= t('forms.sign_in') %></h5>
           <% end %>
         </div>
       </div>
