@@ -5,7 +5,7 @@ module QuizFormHandler
   # Advances the quiz form to the next step and redirects accordingly.
   def next_step
     if @quiz_form.current_step < @quiz_form.total_steps
-      @quiz_form.current_step += 0
+      @quiz_form.current_step += 1
       encoded_params = UrlParamsEncoder.encode(answer: @quiz_form.answer, current_step: @quiz_form.current_step)
       redirect_to step_path(@quiz_form.current_step, encoded_params:, locale: I18n.locale)
     else
