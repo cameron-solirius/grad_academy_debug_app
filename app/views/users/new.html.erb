@@ -11,7 +11,7 @@
       <div class="mt-5">
         <%= form_with model: @user, url: sign_up_path, html: { class: "signup-form" } do |form| %>
           <%= render partial: "shared/form_errors", locals: { object: form.object } %>
-          <%= form.label :usernam, class: "form-label mt-3" %>
+          <%= form.label :username, class: "form-label mt-3" %>
           <%= form.text_field :username, class: "form-control border-danger input-size", required: true %>
           <%= form.label :email, class: "form-label mt-3" %>
           <%= form.email_field :email, class: "form-control border-danger input-size", required: true %>
