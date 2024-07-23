@@ -9,6 +9,7 @@
     <div class="col-md-4 col-12 ms-5">
       <h2 class="text-center "><%= t('users.create_account') %></h2>
       <div class="mt-5">
+      # Form receives sign up details
         <%= form_with model: @user, url: sign_up_path, html: { class: "signup-form" } do |form| %>
           <%= render partial: "shared/form_errors", locals: { object: form.object } %>
           <%= form.label :username, class: "form-label mt-3" %>

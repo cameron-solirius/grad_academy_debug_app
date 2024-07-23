@@ -25,7 +25,7 @@ class UsersController < ApplicationController
   # POST /users
   # Creates a new user based on the submitted parameters.
   def create
-    @user = User.new()
+    @user = User.new(user_params)
     if @user.save
       reset_session
       session[:current_user_id] = @user.id
@@ -47,7 +47,7 @@ class UsersController < ApplicationController
 
   private
 
-  # Strong parameters for user creation.
+  # Strong parameters for user creation. User params are defined here
   def user_params
     params.require(:user).permit(:username, :email, :password, :password_confirmation)
   end
