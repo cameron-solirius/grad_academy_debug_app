@@ -7,22 +7,22 @@
     <%= form.hidden_field :current_step  %>
     <div class="col-lg-6">
       <div class="d-flex align-items-center pt-3">
-        <%= form.check_box "answer_#{question_index}", { id: "answer_#{question_index}_1", class: "me-2" }, value[:answer_1] %>
+         <%= form.radio_button "answer_#{question_index}", value[:answer_1], id: "answer_#{question_index}_1", class: "me-2" %>
         <label for="answer_<%= question_index %>_1"><%= value[:answer_1] %></label>
       </div>
       <div class="d-flex align-items-center pt-3">
-        <%= form.radio_button "answer_#{question_index}", value[:answer_1], id: "answer_#{question_index}_2", class: "me-2" %>
-        <label for="answer_<%= question_index %>_2"><%= value[:answer_1] %></label>
+        <%= form.radio_button "answer_#{question_index}", value[:answer_2], id: "answer_#{question_index}_2", class: "me-2" %>
+        <label for="answer_<%= question_index %>_2"><%= value[:answer_2] %></label>
       </div>
     </div>
     <div class="col-lg-6">
       <div class="d-flex align-items-center pt-3">
-        <%= form.radio_button "answer_#{question_index}", value[:answer_1], id: "answer_#{question_index}_3", class: "me-2" %>
-        <label for="answer_<%= question_index %>_3"><%= value[:answer_1] %></label>
+        <%= form.radio_button "answer_#{question_index}", value[:answer_3], id: "answer_#{question_index}_3", class: "me-2" %>
+        <label for="answer_<%= question_index %>_3"><%= value[:answer_3] %></label>
       </div>
       <div class="d-flex align-items-center pt-3">
-        <%= form.radio_button "answer_#{question_index}", value[:answer_1], id: "answer_#{question_index}_4", class: "me-2" %>
-        <label for="answer_<%= question_index %>_4"><%= value[:answer_1] %></label>
+        <%= form.radio_button "answer_#{question_index}", value[:answer_4], id: "answer_#{question_index}_4", class: "me-2" %>
+        <label for="answer_<%= question_index %>_4"><%= value[:answer_4] %></label>
       </div>
     </div>
   </div>

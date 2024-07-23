@@ -28,7 +28,7 @@ module QuizResultsHelper
   def total_correct_answers(quiz_results)
     total_correct = 0
     quiz_results.answer.each_with_index do |answers, page_index|
-      answers[1].each_with_index do |answer, question_index|
+      answers.each_with_index do |answer, question_index|
         correct_answer = fetch_correct_answer(page_index, question_index)
         total_correct += 1 if check_answer(correct_answer, answer)
       end
@@ -139,7 +139,11 @@ module QuizResultsHelper
   # - String indicating whether the user's answer was "Correct" or "Incorrect".
   #
   def evaluate_result(correct_answer, user_answer)
-    'Incorrect'
+    if correct_answer == user_answer
+      'Correct'
+      else
+        'Incorrect'
+      end
   end
 
   # Generates table data (`<td>`) for question, correct answer, user's answer, and result.

@@ -22,7 +22,7 @@
               <tr>
                 <td><%= continuous_index(question_page_number, index+1) %></td>
                 <td><%= format_quiz_question(question, index) %></td>
-                <td><% answer %></td>
+                <td><%= answer %></td>
                 <td class="text-center">
                   <%= link_to t('check_answers.table.change'), edit_step_path(id: question_page_number, answer: @quiz_results.answer), class: "btn btn-danger px-3" %>
                 </td>
