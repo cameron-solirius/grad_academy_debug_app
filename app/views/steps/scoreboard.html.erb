@@ -1,9 +1,18 @@
 <% provide(:title, t('scoreboard.title')) %>
-<div id="check-answers" class="container d-inline-flex align-items-center mt-4 mb-4 pt-5">
+<div id="check-answers" class="container align-items-center mt-4 mb-4 pt-5">
   <h1 class="text-danger text-center"><%= t('scoreboard.heading') %></h1>
-  <hr class="border border-danger w-100 border-2 my-2">
+  <hr class="border border-danger w-100 border-2 my-3">
 
   <table class="table mt-4">
+
+    <tr>
+      <th><%= t('scoreboard.table.quiz') %></th>
+      <th ><%= t('scoreboard.table.user') %></th>
+      <th><%= t('scoreboard.table.date') %></th>
+      <th ><%= t('scoreboard.table.score') %></th>
+      <th ><%= t('scoreboard.table.download_results') %></th>
+    </tr>
+
     <tbody class="table-group-divider border-danger">
       <% @top_scores.each_with_index do |answer, _index| %>
         <tr>
