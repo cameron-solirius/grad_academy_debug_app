@@ -28,7 +28,7 @@ module QuizResultsHelper
   def total_correct_answers(quiz_results)
     total_correct = 0
     quiz_results.answer.each_with_index do |answers, page_index|
-      answers[1].each_with_index do |answer, question_index|
+      answers.each_with_index do |answer, question_index|
         correct_answer = fetch_correct_answer(page_index, question_index)
         total_correct += 1 if check_answer(correct_answer, answer)
       end
