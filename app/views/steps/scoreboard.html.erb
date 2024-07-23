@@ -4,6 +4,15 @@
   <hr class="border border-danger w-100 border-2 my-2">
 
   <table class="table mt-4">
+
+    <tr>
+      <th><%= t('scoreboard.table.quiz') %></th>
+      <th ><%= t('scoreboard.table.user') %></th>
+      <th><%= t('scoreboard.table.date') %></th>
+      <th ><%= t('scoreboard.table.score') %></th>
+      <th ><%= t('scoreboard.table.download_results') %></th>
+    </tr>
+
     <tbody class="table-group-divider border-danger">
       <% @top_scores.each_with_index do |answer, _index| %>
         <tr>
