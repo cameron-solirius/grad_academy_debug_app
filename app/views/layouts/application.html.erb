@@ -1,20 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html data-bs-theme="light">
   <head>
-    <% unless controller_name = "welcome"%>
-      <%= render "shared/footer" %>
-    <% end %>
     <title><%= full_title(yield(:title)) %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
     <%= javascript_importmap_tags %>
   </head>
-
-  <body data-bs-theme="light">
+  <body>
     <%= render "shared/navbar" %>
     <% if flash[:notice] %>
       <div class="flash-notice alert alert-success text-center w-auto mx-3 mt-4" role="alert">
@@ -25,12 +20,8 @@
       <%= yield %>
     </div>
     <%= render 'shared/signout_modal' %>
-
-    <% unless controller_name = "welcome"%>
+    <% unless controller_name = "welcome" %>
       <%= render "shared/footer" %>
     <% end %>
-    
   </body>
 </html>
-
-

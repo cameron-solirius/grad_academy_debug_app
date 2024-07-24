@@ -29,7 +29,7 @@
             <%= answer.score %>%
           </td>
           <td>
-            <%= link_to download_steps_path(format: :csv, id: answer.id), class: 'link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-25-hover d-flex align-items-center' do %>
+            <%= link_to download_steps_path(format: :csv, id: answer.id), class: 'link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-25-hover d-flex align-items-center' do %>
               <i class="bi bi-arrow-down-circle-fill me-2"></i> <%= t('scoreboard.table.download_filename', id: answer.id) %>
             <% end %>
           </td>

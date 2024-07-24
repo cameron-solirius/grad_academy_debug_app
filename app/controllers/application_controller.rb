@@ -13,6 +13,8 @@ class ApplicationController < ActionController::Base
     @title_name = 'Quizlet -'
   end
 
+
+
   # Sets the locale for the application based on user's preferred language or browser settings.
   def set_locale
     if current_user&.language.present?
@@ -24,6 +26,10 @@ class ApplicationController < ActionController::Base
       I18n.locale = I18n.available_locales.include?(browser_locale&.to_sym) ? browser_locale : I18n.default_locale
     end
   end
+
+
+  # const currentTheme = localStorage.getItem("theme");
+  # element.dataset.bsTheme = newTheme;
 
   # catch all route for not found urls - all controllers will inherit this
   def render_404
