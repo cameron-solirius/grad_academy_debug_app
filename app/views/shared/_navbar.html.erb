@@ -4,6 +4,9 @@
       <%= link_to welcome_path, class: 'navbar-logo' do %>
         <%= logo_html.html_safe %>
       <% end %>
+       <div class="form-check form-switch mx-4">
+         <%= check_box_tag "theme_switch", "on", true, id: "flexSwitchCheckChecked", class: "form-check-input p-2", onclick: "toggleTheme()" %>
+        </div>
     </div>
 
     <% if current_user %>
@@ -17,9 +20,17 @@
         <h5 class="mb-0">
           <%= link_to t('forms.sign_out'), '#', class: 'text-white m-0 fw-normal', data: { bs_toggle: 'modal', bs_target: '#signoutModal' } %>
         </h5>
+
        <%= render "shared/flag" %>
         
       </div>
     <% end %>
+
+      <script>
+        function toggleTheme() {
+          var element = document.body;
+          element.dataset.bsTheme = element.dataset.bsTheme === "light" ? "dark" : "light";
+        }
+      </script>
   </div>
 </nav>
