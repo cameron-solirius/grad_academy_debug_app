@@ -2,6 +2,7 @@ en:
   languages:
     en: "English"
     fr: "French"
+    gu: "Gujarati"
   authentication:
     redirect_if_authenticated_message: "You are already logged in"
     redirect_if_not_authenticated_message: "Please log in to access this page."

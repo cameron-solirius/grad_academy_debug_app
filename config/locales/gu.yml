@@ -1,0 +1,200 @@
+gu:
+  languages:
+    en: "અંગ્રેજી"
+    fr: "ફ્રેન્ચ"
+    gu: "Gujarati"
+  authentication:
+    redirect_if_authenticated_message: "તમે પહેલાથી જ લોગ ઇન છો"
+    redirect_if_not_authenticated_message: "કૃપા કરીને આ પેજને ઍક્સેસ કરવા માટે લોગ ઇન કરો."
+  sessions:
+    create_an_account: "અથવા એક એકાઉન્ટ બનાવો"
+    signed_in: "સફળતાપૂર્વક સાઇન ઇન થયું"
+    signed_out: "સફળતાપૂર્વક સાઇન આઉટ થયું"
+    sign_out_modal_title: "સાઇન આઉટની પુષ્ટિ કરો"
+    sign_out_confirmation: "શું તમે ખરેખર સાઇન આઉટ કરવી છે?"
+    sign_out_cancel: "રદ કરો"
+  users:
+    signed_up: "સ્વાગત છે! તમે સફળતાપૂર્વક સાઇન અપ કર્યું છે"
+    updated: "પ્રોફાઇલ સફળતાપૂર્વક અપડેટ કર્યું"
+    no_score_available: "કોઈ સ્કોર ઉપલબ્ધ નથી"
+    sign_up_headline: "આજથી તમારો ક્વિઝ પ્રવાસ શરૂ કરો!"
+    sign_up_line_one: "જ્ઞાનની દુનિયામાં ઝંપલાવ માટે અમારો જોડાઓ"
+    create_account: "તમારું એકાઉન્ટ બનાવો"
+    login_prompt: "પહેલાથી એકાઉન્ટ છે?"
+    errors:
+      invalid_email_or_password: "અમાન્ય ઇમેઇલ અથવા પાસવર્ડ"
+  answers:
+    errors:
+      unanswered_questions: "કૃપા કરીને બધી પ્રશ્નોના જવાબ આપો"
+      empty_answer: "જવાબ ખાલી ના હોઈ શકે"
+      invalid_question_name: "અમાન્ય પ્રશ્નનું નામ: %{question_name}"
+      invalid_answer: "અમાન્ય જવાબ: %{answer}"
+  welcome:
+    start_quiz: "ક્વિઝ શરૂ કરો"
+    instructions:
+      title: "ક્વિઝઍપમાં સ્વાગત છે, <span class=\"username\">%{username}</span>!"
+      subtitle: "તમારા જ્ઞાનનું પરીક્ષણ કરવા અને અમારા રોમાંચક ક્વિઝ સાથે મોજ કરવા માટે તૈયાર થાઓ! અહીં શરૂઆત કરવા માટેની કેટલીક મૂળભૂત સૂચનાઓ છે:"
+      list:
+        answer_questions: "પ્રશ્નોનો જવાબ આપો: દરેક પ્રશ્નને ધ્યાનપૂર્વક વાંચો અને તમે જે યોગ્ય જવાબ માનો છો તે પસંદ કરો. નૅવિગેશન બટનોનો ઉપયોગ કરીને સબમિટ કરતા પહેલાં તમે તમારા જવાબોમાં ફેરફાર કરી શકો છો."
+        submit_answers: "તમારા જવાબો સબમિટ કરો: એક વાર તમે તમારા જવાબોથી નક્કી થઈ ગયા પછી, ક્વિઝના અંતે \"સબમિટ\" બટન પર ક્લિક કરો. ત્યારબાદ તમે તમારો સ્કોર જોઈ શકશો અને યોગ્ય જવાબો સમીક્ષા કરી શકશો."
+        start_quiz: "ક્વિઝ શરૂ કરો: ક્વિઝ શરૂ કરવા માટે, નીચેના બટન પર đơnાંત કરો. શુભકામનાઓ, અને ચેલેન્જનો આનંદ લો!"
+  forms:
+    sign_in: "સાઇન ઇન"
+    sign_up: "સાઇન અપ"
+    sign_out: "સાઇન આઉટ"
+    username: "વપરાશકર્તા નામ"
+    email: "ઇમેઇલ"
+    language: "ભાષા"
+    edit_profile: "પ્રોફાઇલ સંપાદિત કરો"
+    top_score_profile: "ટોપ સ્કોર: "
+    update_profile: "પ્રોફાઇલ અપડેટ કરો"
+    next: "આગલું"
+    submit: "સબમિટ"
+    back_button: "પાછળ"
+    scoreboard: "સ્કોરબોર્ડ"
+  quiz_results:
+    your_score: "તમારો સ્કોર: "
+    score: "%{score}%"
+    questions_correctly_answered: "%{total} પ્રશ્નોમાંથી %{correct} સાચા જવાબ આપ્યા"
+  quiz_form:
+    errors:
+      blank_answer: "જવાબ જરૂરી છે"
+    current_page_range: "પૃષ્ઠ %{start_page} 3માંથી"
+    question_page_1:
+      submit: "આગલું"
+      question_1:
+        question: "માનવ શરીરમાં સૌથી મોટી હાડકું કયું છે?"
+        answer_1: "ફીમર"
+        answer_2: "ટિબિયા"
+        answer_3: "હ્યુમેરસ"
+        answer_4: "રેડિયસ"
+        correct_answer: "ફીમર"
+      question_2:
+        question: "સાપેક્ષતાના સિદ્ધાંત કૌણે વિકસાવ્યું?"
+        answer_1: "આઇઝેક ન્યુટન"
+        answer_2: "આલ્બર્ટ આઇન્સ્ટાઇન"
+        answer_3: "ગેલિલિયો ગેલિલી"
+        answer_4: "સ્ટીફન હોકિંગ"
+        correct_answer: "આલ્બર્ટ આઇન્સ્ટાઇન"
+      question_3:
+        question: "વિશ્વનો પ્રથમ વ્યાપારી રીતે સફળ માઇક્રોપ્રોસેસર કઈ કંપનીએ વિકસાવ્યો?"
+        answer_1: "આઇબીએમ"
+        answer_2: "માઇક્રોસોફ્ટ"
+        answer_3: "ઍપલ"
+        answer_4: "ઇન્ટેલ"
+        correct_answer: "ઇન્ટેલ"
+      question_4:
+        question: "વિશ્વનો સૌથી ઊંચો પર્વત કયો છે?"
+        answer_1: "માઉન્ટ કિલિમંजारો"
+        answer_2: "માઉન્ટ એવરેસ્ટ"
+        answer_3: "માઉન્ટ ફૂજી"
+        answer_4: "માઉન્ટ મેકિન્લી (ડેનાલી)"
+        correct_answer: "માઉન્ટ એવરેસ્ટ"
+      question_5:
+        question: "પૃથ્વીના વાતાવરણનો મોટાભાગનો હિસ્સો કઈ વાયુથી બનેલો છે?"
+        answer_1: "પ્રાણવાયુ"
+        answer_2: "કાર્બન ડાઇઑક્સાઇડ"
+        answer_3: "નાઇટ્રોજન"
+        answer_4: "હાઇડ્રોજન"
+        correct_answer: "નાઇટ્રોજન"
+    question_page_2:
+      submit: "આગલું"
+      question_1:
+        question: "ઝાડપોતો પોતાની ભોજન બનાવવાની પ્રક્રિયા કઈ કહેવાય છે?"
+        answer_1: "પ્રકાશસંશ્લેષણ"
+        answer_2: "શ્વસન"
+        answer_3: "વિકાસન"
+        answer_4: "અંકુરણ"
+        correct_answer: "પ્રકાશસંશ્લેષણ"
+      question_2:
+        question: "પીડા અભ્યાસને શું કહેવામાં આવે છે?"
+        answer_1: "હર્પેટોલોજી"
+        answer_2: "ઓર્નિથોલોજી"
+        answer_3: "એન્ટોમોલોજી"
+        answer_4: "ઇકથ્યોલોજી"
+        correct_answer: "એન્ટોમોલોજી"
+      question_3:
+        question: "નોબેલ પુરસ્કાર જીતનાર પ્રથમ મહિલા કૌણ હતી?"
+        answer_1: "રોઝાલિન્ડ ફ્રેન્કલિન"
+        answer_2: "ડોરોથી હોડજ્કિન"
+        answer_3: "બાર્બરા મેકક્લિનટોક"
+        answer_4: "મેરી ક્યુરી"
+        correct_answer: "મેરી ક્યુરી"
+      question_4:
+        question: "કઈ પ્રોગ્રામિંગ ભાષા ગીડો વાન રસમ દ્વારા વિકસાવવામાં આવી હતી અને તેની વાંચનીયતા અને સરળતામાં જાણીતી છે?"
+        answer_1: "જાવા"
+        answer_2: "સી++"
+        answer_3: "પાયથન"
+        answer_4: "રૂબી"
+        correct_answer: "પાયથન"
+      question_5:
+        question: "'ધ કૅચર ઇન ધ રાઇ' નો લેખક કોણ છે?"
+        answer_1: "જે.ડી. સેલિન્ઝર"
+        answer_2: "એફ. સ્કોટ ફિટ્ઝજેરાલ્ડ"
+        answer_3: "અર્નેસ્ટ હેમિંગ્વે"
+        answer_4: "હાર્પર લી"
+        correct_answer: "જે.ડી. સેલિન્ઝર"
+    question_page_3:
+      submit: "આગલું"
+      question_1:
+        question: "પૃથ્વી પરનું સૌથી ઊંચું સસ્તનપ્રાણી કયું છે?"
+        correct_answer: "જિરાફ"
+      question_2:
+        question: "વિશ્વનો સૌથી મોટો મહાસાગર કયો છે?"
+        correct_answer: "પ્રશાંત"
+      question_3:
+        question: "પેરુની રાજધાની કયું શહેર છે?"
+        correct_answer: "લિમા"
+      question_4:
+        question: "સોનાનું રાસાયણિક પ્રતીક શું છે?"
+        correct_answer: "au"
+      question_5:
+        question: "તમારી મનપસંદ પ્રોગ્રામિંગ ભાષા કઈ છે?"
+        correct_answer: "રૂબી"
+  check_answers:
+    title: "જવાબો
+
+ તપાસો"
+    heading: "તમારા જવાબો તપાસો"
+    submit_modal_title: "સબમિશનની પુષ્ટિ કરો"
+    submit_modal_confirmation: "શું તમે ખરેખર તમારા જવાબો સબમિટ કરીને પરિણામો જોવું છે?"
+    submit_modal_cancel: "રદ કરો"
+    table:
+      question_number: "પ્રશ્ન નં"
+      question: "પ્રશ્ન"
+      answer: "જવાબ"
+      change_answer: "જવાબ બદલો"
+      change: "બદલો"
+    buttons:
+      submit: "તમારા જવાબો સબમિટ કરો"
+  results:
+    title: "પરિણામો"
+    heading: "પરિણામો"
+    table:
+      question: "પ્રશ્ન"
+      correct_answer: "યોગ્ય જવાબ"
+      answered: "જવાબ આપેલ"
+      correct_incorrect: "યોગ્ય/અયોગ્ય"
+    buttons:
+      continue: "ચાલુ રાખો"
+  scoreboard:
+    title: "સ્કોરબોર્ડ"
+    heading: "સ્કોરબોર્ડ"
+    table:
+      quiz: "ક્વિઝ"
+      user: "વપરાશકર્તા"
+      date: "તારીખ"
+      score: "સ્કોર"
+      download_results: "પરિણામો ડાઉનલોડ કરો"
+      quiz_number: "ક્વિઝ #%{id}"
+      download_filename: "quiz%{id}.csv"
+      username: "વપરાશકર્તા નામ"
+      quiz_id: "ક્વિઝ ID"
+      date_attempted: "પ્રયત્ન કરેલી તારીખ"
+      overall_score: "કુલ સ્કોર"
+      question: "પ્રશ્ન"
+      given_answer: "આપેલ જવાબ"
+      correct_answer: "યોગ્ય જવાબ"
+    buttons:
+      start_new_quiz: "નવી ક્વિઝ શરૂ કરો"
+      download_all_results: "બધા પરિણામો ડાઉનલોડ કરો"
